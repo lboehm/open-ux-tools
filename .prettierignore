@@ -1,4 +1,9 @@
 *.md
 dist/
-**/packages/templates/**/templates
-!packages/templates/
+node_modules/
+typings/
+**/templates
+**/test-input
+**/test-output
+**/coverage
+**/__snapshots__

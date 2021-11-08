@@ -1,17 +1,21 @@
 # Development Conventions and Guidelines
+
+## Folder and package structure
+Modules are located in folder [./packages/](./packages/) in this repository. Folder names are module names without scope, e.g. module `@scope/my-awesome-module` is located in folder `packages/my-awesome-module`. We might consider grouping of modules in future, in this case we will revisit folder naming guideline.
+
 ## TypeScript Coding Guidelines
-We enforce code style rules using [ESLint](https://eslint.org). Execute `yarn lint` to check your code for style issues.  
+We enforce code style rules using [ESLint](https://eslint.org). Execute `pnpm lint` to check your code for style issues.  
 You may also find an ESLint integration for your favorite IDE [here](https://eslint.org/docs/user-guide/integrations).
 
 You can fix auto-fixable problems by running:
 
 ```shell
-yarn lint --fix
+pnpm lint:fix
 ```
 ## Testing
 You can run all the tests by running:
 ```
-yarn test
+pnpm test
 ```
 
 Please make sure you add or modify tests for the code you are contributing.

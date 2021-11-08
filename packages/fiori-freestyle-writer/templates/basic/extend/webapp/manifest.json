@@ -1,0 +1,46 @@
+{
+    "sap.ui5": {
+        "rootView": {
+            "viewName": "<%- app.id %>.view.<%- template.settings.viewName %>",
+            "type": "XML",
+            "async": true,
+            "id": "<%- template.settings.viewName %>"
+        },
+        "resources": {
+            "css": [
+                {
+                    "uri": "css/style.css"
+                }
+            ]
+        },
+        "routing": {
+            "config": {
+                "routerClass": "sap.m.routing.Router",
+                "viewType": "XML",
+                "async": true,
+                "viewPath": "<%- app.id %>.view",
+                "controlAggregation": "pages",
+                "controlId": "app",
+                "clearControlAggregation": false
+            },
+            "routes": [
+                {
+                    "name": "Route<%- template.settings.viewName %>",
+                    "pattern": "Route<%- template.settings.viewName %>",
+                    "target": [
+                        "Target<%- template.settings.viewName %>"
+                    ]
+                }
+            ],
+            "targets": {
+                "Target<%- template.settings.viewName %>": {
+                    "viewType": "XML",
+                    "transition": "slide",
+                    "clearControlAggregation": false,
+                    "viewId": "<%- template.settings.viewName %>",
+                    "viewName": "<%- template.settings.viewName %>"
+                }
+            }
+        }
+    }
+}
