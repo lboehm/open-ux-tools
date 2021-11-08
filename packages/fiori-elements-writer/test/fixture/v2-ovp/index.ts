@@ -1,12 +1,12 @@
-import { FEApp, FrameworkVersion, TemplateType, OVP } from '../../../src/data/types';
+import { FEApp, FrameworkVersion, TemplateType, OVP } from '../../../src/types';
 import { readFileSync } from 'fs';
 import { join } from 'path';
 import { OdataVersion } from '@sap-ux/odata-service-writer';
 
-export const v2OvpTestData: FEApp<OVP> = { 
+export const v2OvpTestData: FEApp<OVP> = {
     app: {
-        id: "test.new.gen.myApp",
-        title: "My application"
+        id: 'test.new.gen.myApp',
+        title: 'My application'
     },
     package: {
         name: 'Test'
@@ -33,4 +33,4 @@ export const v2OvpTestData: FEApp<OVP> = {
     annotations: {
         ns: 'test.new.gen'
     }
-}
+};

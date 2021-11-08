@@ -1,12 +1,12 @@
-import { FEApp, FrameworkVersion, TemplateType, LROP } from '../../../src/data/types';
+import { FEApp, FrameworkVersion, TemplateType, LROP } from '../../../src/types';
 import { readFileSync } from 'fs';
 import { join } from 'path';
 import { OdataVersion } from '@sap-ux/odata-service-writer';
 
-export const v4LropTestData: FEApp<LROP> = { 
+export const v4LropTestData: FEApp<LROP> = {
     app: {
-        id: "test.new.gen.myV4App",
-        title: "My V4 application"
+        id: 'test.new.gen.myV4App',
+        title: 'My V4 application'
     },
     package: {
         name: 'Test'
@@ -27,4 +27,4 @@ export const v4LropTestData: FEApp<LROP> = {
     annotations: {
         ns: 'test.new.gen'
     }
-}
+};

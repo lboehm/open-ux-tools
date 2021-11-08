@@ -4049,8 +4049,8 @@ appDescription=Description of test.new.gen.myApp",
     },
     \\"offline\\": false,
     \\"sourceTemplate\\": {
-      \\"id\\": \\"@sap/ux-fiori-elements-template\\",
-      \\"version\\": \\"0.1.0\\"
+      \\"id\\": \\"@sap-ux/fiori-elements-writer\\",
+      \\"version\\": \\"0.9.0\\"
     }
   },
   \\"sap.ui\\": {
@@ -5162,8 +5162,8 @@ xmlns:atom=\\"http://www.w3.org/2005/Atom\\"/>
     },
     \\"offline\\": false,
     \\"sourceTemplate\\": {
-      \\"id\\": \\"@sap/ux-fiori-elements-template\\",
-      \\"version\\": \\"0.1.0\\"
+      \\"id\\": \\"@sap-ux/fiori-elements-writer\\",
+      \\"version\\": \\"0.9.0\\"
     }
   },
   \\"sap.ui\\": {
@@ -6771,8 +6771,8 @@ appDescription=Description of test.new.gen.myV4App",
     },
     \\"offline\\": false,
     \\"sourceTemplate\\": {
-      \\"id\\": \\"@sap/ux-fiori-elements-template\\",
-      \\"version\\": \\"0.1.0\\"
+      \\"id\\": \\"@sap-ux/fiori-elements-writer\\",
+      \\"version\\": \\"0.9.0\\"
     }
   },
   \\"sap.ui\\": {

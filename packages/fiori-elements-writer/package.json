@@ -1,6 +1,6 @@
 {
     "name": "@sap-ux/fiori-elements-writer",
-    "version": "0.0.1",
+    "version": "0.8.0",
     "main": "dist/index.js",
     "scripts": {
         "build": "rimraf dist && tsc",

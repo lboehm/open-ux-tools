@@ -11,8 +11,8 @@
         },
         "offline": false,
         "sourceTemplate": {
-            "id": "@sap/ux-fiori-elements-template",
-            "version": "0.1.0"
+            "id": "@sap-ux/fiori-elements-writer",
+            "version": "0.9.0"
         }
     }
 }

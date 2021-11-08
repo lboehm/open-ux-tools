@@ -1,7 +1,7 @@
-import { FrameworkVersion, TemplateType } from './types';
+import { FrameworkVersion, TemplateType } from '../types';
 
 export const getUI5Libs = (templateType: TemplateType, version: FrameworkVersion): Array<string> => {
-    switch(version) {
+    switch (version) {
         case FrameworkVersion.V2:
             return getV2Libs(templateType);
         case FrameworkVersion.V4:
@@ -10,7 +10,6 @@ export const getUI5Libs = (templateType: TemplateType, version: FrameworkVersion
             throw new Error('Unsupported version: ' + version);
     }
 };
-
 
 const getV2Libs = (templateType: TemplateType): Array<string> => {
     const commonLibs = ['sap.f', 'sap.ui.comp', 'sap.ui.table', 'sap.ushell'];
@@ -26,4 +25,4 @@ const getV2Libs = (templateType: TemplateType): Array<string> => {
 
 const getV4Libs = (_templateType: TemplateType): Array<string> => {
     return ['sap.fe.templates', 'sap.ushell'];
-}
+};

@@ -1,4 +1,4 @@
-import { FrameworkVersion, Template, TemplateType } from './types';
+import { FrameworkVersion, Template, TemplateType } from '../types';
 
 const baseComponents: Record<string, Record<string, string>> = {};
 baseComponents[FrameworkVersion.V2] = {};
