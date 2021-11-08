@@ -12,7 +12,7 @@ export const getUI5Libs = (templateType: TemplateType, version: FrameworkVersion
 };
 
 const getV2Libs = (templateType: TemplateType): Array<string> => {
-    const commonLibs = ['sap.f', 'sap.ui.comp', 'sap.ui.table', 'sap.ushell'];
+    const commonLibs = ['sap.f', 'sap.m', 'sap.ui.comp', 'sap.ui.table', 'sap.ushell'];
 
     if (templateType == TemplateType.ListReport) {
         return [...commonLibs, 'sap.suite.ui.generic.template', 'sap.ui.generic.app'];
@@ -24,5 +24,5 @@ const getV2Libs = (templateType: TemplateType): Array<string> => {
 };
 
 const getV4Libs = (_templateType: TemplateType): Array<string> => {
-    return ['sap.fe.templates', 'sap.ushell'];
+    return ['sap.m', 'sap.fe.templates', 'sap.ushell'];
 };

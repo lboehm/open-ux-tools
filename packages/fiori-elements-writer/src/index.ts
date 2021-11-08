@@ -7,12 +7,7 @@ import { generate as addOdataService } from '@sap-ux/odata-service-writer';
 import { FEApp, getBaseComponent } from './data';
 import { UI5Config } from '@sap-ux/ui5-config';
 
-const getUI5Libs = (ui5Libs?: string | string[]): string[] => {
-    const libs = Array.isArray(ui5Libs) ? ui5Libs : ui5Libs?.split(',') || [];
-    return ['sap.m', 'sap.ushell'].concat(libs).filter((value, index, self) => {
-        return self.indexOf(value) === index;
-    });
-};
+import { getUI5Libs } from './data/ui5Libs';
 
 /**
  * @param basePath
@@ -52,7 +47,7 @@ async function generate<T>(basePath: string, data: FEApp<T>, fs?: Editor): Promi
     ui5Config.addUI5Framework(
         'SAPUI5',
         data.ui5!.localVersion!,
-        getUI5Libs(data?.ui5?.ui5Libs),
+        getUI5Libs(data.template.type, data.template.version),
         data.ui5!.ui5Theme
     );
     fs.write(ui5ConfigPath, ui5Config.toString());
